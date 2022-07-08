@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes Section</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0, shrink-to-fit=no">
+        <meta name="keywords" content="codeworld,code, mmmut codes,mmmut, html, css, c, data structure, java, c++, learning, programming, development,tutorials,practicals,examples">
+        <meta name="description" content="It is an educational website for learning coding online. It includes tutorials, references, practicals related to C, C++, Java, Data Structure etc.">
+        <meta name="author" content="Prashant Kumar Gupta">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">  
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" href="img/logo.jpg">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156947534-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156947534-1');
+        </script>
+        <style>
+            body{
+                background-attachment: fixed;
+                background-image:linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.7)), url(../img/noteshome.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                height: 100vh;
+                width: 100%;
+            }
+         </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156947534-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156947534-1');
+        </script>
+    </head>
+    <body>
+       
+        <!-- Loader -->
+        <div id="loader-wrapper">
+          <div id="loader"></div>
+      
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+      
+        </div>
+
+        <!-- Header Section -->
+        <nav class="navbar navbar-expand-md navbar-dark rounded">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" alt="" class="rounded" width="30" height="30"> CodeWorld</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mymenu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-th"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mymenu">
+                <ul class="navbar-nav nav-fill colors mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home<span class="sr-only"></span></a> </li>
+                    <li class="nav-item"><a class="nav-link" href="c.html">C </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="cpp.html">C++ </a></li>
+                    <li class="nav-item"><a class="nav-link" href="ds.html">Data Structure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="java.html">Java</a></li>
+                    <li class="nav-item dropdown align-self-center">
+                        <button class="nav-link dropdown-toggle" id="practical" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Practical
+                        </button>
+                        <div class="dropdown-menu bg-transparent" aria-labelledby="practical">
+                            <a class="dropdown-item" href="acm.html">ACM</a>
+                            <a class="dropdown-item" href="swl-4.html">SWL-4</a>
+                            <a class="dropdown-item" href="cod.html">COD</a>
+                            <a class="dropdown-item" href="dbms.html">DBMS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Notes</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container" id="notes">
+          <div class="d-grid gap-2 d-md-flex justify-content-center">
+            <h5 class="text-warning">Someone who wants to add links to notes can contact me. He/She will get access to complete notes, the code of the website, and other study material. As I am not getting time to update the website.</h5>
+            <a href="https://forms.gle/fpTGk81vHCeGRxKo9" class="btn btn-success align-self-center" target="_blank">Upload your handwritten notes</a>
+          </div>
+            <div class="accordion" id="accord">
+
+                <!-- CSE -->
+                <div class="card bg-transparent" id="comp">
+                  <div class="card-header bg-transparent align-self-center">
+                   <button class="btn close" type="button" data-toggle="collapse" data-target="#cse" aria-expanded="true" aria-controls="cse">
+                     CSE
+                   </button>
+                  </div>
+                   <div id="cse" class="collapse" aria-labelledby="comp" data-parent="#accord">
+                     <div class="row justify-content-sm-center mt-sm-5">
+                       <div class="col-6 col-md-auto">
+                           <div class="btn-group m-2 dropright">
+                               <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 I Sem
+                               </button>
+                               <div class="dropdown-menu" aria-labelledby="first">
+                                 <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EgUl2XABLnxHvOhUWm8zHegBxMe1NzJBjEDPQvPVQK_LRA?e=FSAeG1">ENVIRONMENT</a>
+                                 <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ev2bPAzmbfZBqmpFevlUXccBWDr-TczX23AIB1YppMcpnw?e=c604gR">ICP</a>
+                                 <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                                 <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EqeEPG8qZEhOl68__RIDjN0Bxx7AzfxONIFhmF06yCyxLQ?e=W3emdg">PC</a>
+                                 <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Es0j6kB4QjNGigNkpqQ4xAUBBHEfSSpzuwnTWX7HbgwjRw?e=qac0c2">PEE</a>
+                                 <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EmJCoHpfC1pHv4Ml7pOSp4MBWNRsycM0Z6rZJD1bZ472QQ?e=KrVSv2">PAPERS</a>
+                               </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 II Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="second">
+                              <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                              <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                              <a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/1sXJb9xEcQj7S__H_fFXUgTqKZYo0SZCp?usp=sharing">Graph Theory</a>
+                              <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/El14FsOJ6aRLsOOX7lVsZFoB3s5VjbK5SFQKOLRsAEuM5Q?e=vlJDhs">PAPERS</a>
+                             </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             III Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="third">
+                             <a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/18bB-YSI_L9rjOsSWZnAraIuueu302UGW?usp=sharing">ACM</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ElHAowAYWX5KqckY09HDb3ABBdgxxd2mHvZzdKRMOF0xIg?e=T5AQKC">DS</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EpsRCzIpJSNBitIc0bgNpEcBbfYZ6l6COiUkiNpmy5q5oQ?e=D2cCfn">DM</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ErFw6p3tUzZLvp1QpOKcOOMB5Gqs6BJM4-82uI4ZnIQFRQ?e=ZviGfw">DLD</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EpSGd5UiHD5NhAOJAZFqh30B7TFceLTG4X8DsX4ami9TIw?e=Txx7hV">HV</a>
+                             <a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/19SU1bxpId3j26JMJSBw9jSqJvcGHxGhy?usp=sharing">JAVA</a>
+                             <a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/14dwvsYTCFDaev0_9PAapkJSe2RpiVY1f?usp=sharing">APW</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ErxKwWLBV-xCkH-S5UgzgwoBCmqw-vxNeQi4uF3sTwg16A?e=qgTCje">PAPERS</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         IV Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="fourth">
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EhXR6u7g1U9OqbseiKSm0k8BcrJ_Lz93V7vf1K3R1jfpiQ?e=Qk2h41">DBMS</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eolq8JckdhxKorAKXH3MrbUB9Gc1Tg9ymCJfpnXeGT1UUQ?e=bJR74q">MICR</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/El3rapgoCtdIgUouj2Sm6-gBo8_LGIRBz3j0U2Begw7fwg?e=Fl6c0M">MIS</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eqw8KVvLAFVNpXz0u_ZiPjwBFg0Tw4Ex9FzoNKmQMvmymQ?e=AOzqDG">OT</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Es-LEwRdd4hDvienSyEDtPcB1-QQsC7l9tfAL47GrLdfQg?e=CdJzw2">TOC</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ElHp-gVngNBGhnDJACXzoiMBxHX2dgBJwk--awNQHBkp2A?e=Ft9X0b">PAPERS</a>
+                     </div>
+                 </div>
+                 </div>
+                     </div>
+                     <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                       <div class="col-6 col-md-auto">
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 V Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="fifth">
+                                 <a class="dropdown-item" href="#">NONE</a>
+                             </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               VI Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="sixth">
+                             <a class="dropdown-item" href="#">NONE</a>
+                             </div>
+                       </div>
+                       <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           VII Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="seventh">
+                         <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                   </div>
+                   <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       VIII Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="eigth">
+                     <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+               </div>
+                   </div>
+                     </div>
+                  </div>
+                </div>
+   
+                <!-- EE -->
+                <div class="card bg-transparent" id="electra">
+                 <div class="card-header bg-transparent align-self-center">
+                   <button class="btn close" type="button" data-toggle="collapse" data-target="#ee" aria-expanded="true" aria-controls="cse">
+                     EE
+                   </button>
+                 </div>
+                   <div id="ee" class="collapse" aria-labelledby="electra" data-parent="#accord">
+                     <div class="row justify-content-sm-center mt-sm-5">
+                       <div class="col-6 col-md-auto">
+                           <div class="btn-group m-2 dropright">
+                               <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 I Sem
+                               </button>
+                               <div class="dropdown-menu" aria-labelledby="first">
+                                <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                                <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EhLa4kUfHWJBiHccRBZhAlABM6q52LvZBI4JkjxSCr7A4A?e=m90fex">WORKSHOP</a>
+                               </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 II Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="second">
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eo2ZFgmBsidKp5VoJqWWi5kB4z1AyCjto_r9oh5YSmLRkA?e=JFEShp">EG</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EspnIZ6C40FDtVIPSC88b6wBA30dyFjFarqpn7-2q_KMKA?e=EJJ2cL">FME</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Em3pWr1GSNVEuGM8aAGLhjwB6ComrOX7609PpWp4AjtPcg?e=HEAFcr">HV</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ErIzNnF4BjFLilCK81r-uNIBgzyInYpApmTISHbiMv7IJg?e=hQoMIf">ICP</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EmFWvnkSqt5LmHKnrGHQJSQBkWIb0w6w0_XwTIGEAbDHlQ?e=QnkTRf">PAPERS</a>
+                             </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             III Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="third">
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Es9NeT7EXapFhDESRBFNbeIB015bFaYlLj3eS92bzUlq-Q?e=F00eIa">BSA</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eiu5TXIaD09MpZJrKgQkiq0B-gMv4S5WEwY51cbVMSLq5g?e=H6kPWg">DEC</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EpaF90wZdGtIpistIWIuL0UBk8G_JAJ7mE6ucVBM_Vc6GA?e=91bvo2">EMMI</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EmwnVMLzsJ1Hll8_qKrsBh8B43QsFGKzCBa2Dbl7b3k7KA?e=umIPHs">EM</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eg4QuG6FIatLtCkjhCjAKzYB2iFfZz5Pujklo74wn8O48A?e=68KUry">IS</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EnGQ8XVAxE5FpR7Q_Z4jaqcBCEvUHSS80__nGtTDNKlvbQ?e=lbgz9N">MATLAB</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EoeYIZ__milGgJBrIVs7e-MBZgRWrxZw-bOr9uXgY05PDQ?e=ICcu2R">PAPERS</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         IV Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="fourth">
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ElHp-gVngNBGhnDJACXzoiMBxHX2dgBJwk--awNQHBkp2A?e=Ft9X0b">PAPERS</a>
+                     </div>
+                 </div>
+                 </div>
+                     </div>
+                     <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                           <div class="col-6 col-md-auto">
+                             <div class="btn-group m-2 dropright">
+                                 <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     V Sem
+                                 </button>
+                                 <div class="dropdown-menu" aria-labelledby="fifth">
+                                     <a class="dropdown-item" href="#">NONE</a>
+                                 </div>
+                             </div>
+                             <div class="btn-group m-2 dropright">
+                                 <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   VI Sem
+                                 </button>
+                                 <div class="dropdown-menu" aria-labelledby="sixth">
+                                 <a class="dropdown-item" href="#">NONE</a>
+                                 </div>
+                           </div>
+                           <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               VII Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="seventh">
+                             <a class="dropdown-item" href="#">NONE</a>
+                             </div>
+                       </div>
+                       <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           VIII Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="eigth">
+                         <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                   </div>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+                 
+                 <!-- ECE -->
+                 <div class="card bg-transparent" id="electron">
+                   <div class="card-header bg-transparent align-self-center">
+                    <button class="btn close" type="button" data-toggle="collapse" data-target="#ece" aria-expanded="true" aria-controls="cse">
+                      ECE
+                    </button>
+                   </div>
+                    <div id="ece" class="collapse" aria-labelledby="electron" data-parent="#accord">
+                      <div class="row justify-content-sm-center mt-sm-5">
+                        <div class="col-6 col-md-auto">
+                            <div class="btn-group m-2 dropright">
+                                <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  I Sem
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="first">
+                                  <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                                </div>
+                          </div>
+                          <div class="btn-group m-2 dropright">
+                              <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  II Sem
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="second">
+                                <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                                <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                              </div>
+                          </div>
+                          <div class="btn-group m-2 dropright">
+                          <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              III Sem
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="third">
+                           <a class="dropdown-item" href="#">NONE</a>
+                          </div>
+                      </div>
+                      <div class="btn-group m-2 dropright">
+                      <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          IV Sem
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="fourth">
+                       <a class="dropdown-item" href="#">NONE</a>
+                      </div>
+                  </div>
+                  </div>
+                      </div>
+                      <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                        <div class="col-6 col-md-auto">
+                          <div class="btn-group m-2 dropright">
+                              <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  V Sem
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="fifth">
+                                  <a class="dropdown-item" href="#">NONE</a>
+                              </div>
+                          </div>
+                          <div class="btn-group m-2 dropright">
+                              <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                VI Sem
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="sixth">
+                              <a class="dropdown-item" href="#">NONE</a>
+                              </div>
+                        </div>
+                        <div class="btn-group m-2 dropright">
+                          <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            VII Sem
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="seventh">
+                          <a class="dropdown-item" href="#">NONE</a>
+                          </div>
+                    </div>
+                    <div class="btn-group m-2 dropright">
+                      <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        VIII Sem
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="eigth">
+                      <a class="dropdown-item" href="#">NONE</a>
+                      </div>
+                </div>
+                    </div>
+                      </div>
+                   </div>
+                 </div>
+   
+                 <!-- MECH -->
+                 <div class="card bg-transparent" id="mech">
+                 <div class="card-header bg-transparent align-self-center">
+                 <button class="btn close" type="button" data-toggle="collapse" data-target="#me" aria-expanded="true" aria-controls="cse">
+                 ME
+                 </button>
+                 </div>
+                 <div id="me" class="collapse" aria-labelledby="mech" data-parent="#accord">
+                 <div class="row justify-content-sm-center mt-sm-5">
+                   <div class="col-6 col-md-auto">
+                       <div class="btn-group m-2 dropright">
+                           <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             I Sem
+                           </button>
+                           <div class="dropdown-menu" aria-labelledby="first">
+                            <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                           </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             II Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="second">
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EjDnWzM0XqpKqVWz7eCMtDwBuHewsX5HwHNfvHHwhRlc9g?e=W0QKHj">PAPERS</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         III Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="third">
+                       <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+                 </div>
+                 <div class="btn-group m-2 dropright">
+                 <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     IV Sem
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="fourth">
+                   <a class="dropdown-item" href="#">NONE</a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                   <div class="col-6 col-md-auto">
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             V Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="fifth">
+                             <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           VI Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="sixth">
+                         <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                   </div>
+                   <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       VII Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="seventh">
+                     <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+                 </div>
+                 <div class="btn-group m-2 dropright">
+                 <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   VIII Sem
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="eigth">
+                 <a class="dropdown-item" href="#">NONE</a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+   
+                 <!-- CHE -->
+                 <div class="card bg-transparent" id="chemi">
+                 <div class="card-header bg-transparent align-self-center">
+                 <button class="btn close" type="button" data-toggle="collapse" data-target="#che" aria-expanded="true" aria-controls="cse">
+                 CHE
+                 </button>
+                 </div>
+                 <div id="che" class="collapse" aria-labelledby="chemi" data-parent="#accord">
+                 <div class="row justify-content-sm-center mt-sm-5">
+                   <div class="col-6 col-md-auto">
+                       <div class="btn-group m-2 dropright">
+                           <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             I Sem
+                           </button>
+                           <div class="dropdown-menu" aria-labelledby="first">
+                            <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                           </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             II Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="second">
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         III Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="third">
+                       <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+                 </div>
+                 <div class="btn-group m-2 dropright">
+                 <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     IV Sem
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="fourth">
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EizBXJF_m2xNh6WZEPB6W5QBQfB84Isa0AA_gsPu1IjJeA?e=mT4SpW">HTO</a>
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EsAlh-9t8FNKsibobyCsND0B97s7DT9iM6jrFcrLTzLZgQ?e=40KzBP">IM</a>
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EuuEsg30AFVBmvCfEs5D0HABa-o1rYuee8Ar22MCzDQrYA?e=CiTA8r">PC</a>
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EnfI1bc_6u9Em0UAM5S1KGMBn9DjygzTInWWg5yCJimoZw?e=4Y5A1p">ST</a>
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eg-xTh6KDaNOpc8zzm-kS58BLj07e_vxAJW9HpP_XOEUCg?e=tn7dg2">CET</a>
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EqIpNU3sfmVMqSgqS_-Tx9IB10JS1Evx-bQadYSOhjdJxw?e=LI7ceU">TP</a>
+                   <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtUwvzysZoRJnjNE7398T8kBLud9NrGfFgdJlGTtjXFM3g?e=CxcHG5">PAPERS</a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                   <div class="col-6 col-md-auto">
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             V Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="fifth">
+                             <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           VI Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="sixth">
+                         <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                   </div>
+                   <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       VII Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="seventh">
+                     <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+                 </div>
+                 <div class="btn-group m-2 dropright">
+                 <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   VIII Sem
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="eigth">
+                 <a class="dropdown-item" href="#">NONE</a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+   
+                 <!-- CE -->
+                 <div class="card bg-transparent" id="civil">
+                 <div class="card-header bg-transparent align-self-center">
+                 <button class="btn close" type="button" data-toggle="collapse" data-target="#ce" aria-expanded="true" aria-controls="cse">
+                 CE
+                 </button>
+                 </div>
+                 <div id="ce" class="collapse" aria-labelledby="civil" data-parent="#accord">
+                 <div class="row justify-content-sm-center mt-sm-5">
+                   <div class="col-6 col-md-auto">
+                       <div class="btn-group m-2 dropright">
+                           <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             I Sem
+                           </button>
+                           <div class="dropdown-menu" aria-labelledby="first">
+                            <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                           </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             II Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="second">
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                          <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         III Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="third">
+                       <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+                 </div>
+                 <div class="btn-group m-2 dropright">
+                 <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     IV Sem
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="fourth">
+                   <a class="dropdown-item" href="#">NONE</a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                   <div class="col-6 col-md-auto">
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             V Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="fifth">
+                             <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           VI Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="sixth">
+                         <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                   </div>
+                   <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       VII Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="seventh">
+                     <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+                 </div>
+                 <div class="btn-group m-2 dropright">
+                 <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   VIII Sem
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="eigth">
+                 <a class="dropdown-item" href="#">NONE</a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+
+                 <!-- IT -->
+                 <div class="card bg-transparent" id="info">
+                  <div class="card-header bg-transparent align-self-center">
+                   <button class="btn close" type="button" data-toggle="collapse" data-target="#it" aria-expanded="true" aria-controls="cse">
+                     IT
+                   </button>
+                  </div>
+                   <div id="it" class="collapse" aria-labelledby="info" data-parent="#accord">
+                     <div class="row justify-content-sm-center mt-sm-5">
+                       <div class="col-6 col-md-auto">
+                           <div class="btn-group m-2 dropright">
+                               <button class="btn offset dropdown-toggle" id="first" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 I Sem
+                               </button>
+                               <div class="dropdown-menu" aria-labelledby="first">
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EgUl2XABLnxHvOhUWm8zHegBxMe1NzJBjEDPQvPVQK_LRA?e=FSAeG1">ENVIRONMENT</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ev2bPAzmbfZBqmpFevlUXccBWDr-TczX23AIB1YppMcpnw?e=c604gR">ICP</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eumxk2rSglJPqyEO1FH4Zl4BxO3zc23aXnk2xkx9YtMXMQ?e=e5CEOr">MATHS-I</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EqeEPG8qZEhOl68__RIDjN0Bxx7AzfxONIFhmF06yCyxLQ?e=W3emdg">PC</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Es0j6kB4QjNGigNkpqQ4xAUBBHEfSSpzuwnTWX7HbgwjRw?e=qac0c2">PEE</a>
+                                 <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EmJCoHpfC1pHv4Ml7pOSp4MBWNRsycM0Z6rZJD1bZ472QQ?e=KrVSv2">PAPERS</a>
+                               </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="second" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 II Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="second">
+                              <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ej5xiaVioNFCjCC1ArXXIAMBPHTFTLOXygL0ckE_qXk7Yg?e=BINHtH">MATHS-II</a>
+                              <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EtYcLfW4yhtAt1c1PrSoMH4ByrUvtB23Si18HvAQNTiECA?e=4ez1b5">PHY-II</a>
+                              <a class="dropdown-item" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/El14FsOJ6aRLsOOX7lVsZFoB3s5VjbK5SFQKOLRsAEuM5Q?e=vlJDhs">PAPERS</a>
+                              <a class="dropdown-item" href="https://drive.google.com/drive/folders/1jzXeD-J-lDGouo2-u9hNk-68wE_N9Drn?usp=sharing">FEE</a>
+                             </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="third" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             III Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="third">
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Ev_SccCxAsdDnP4uxdlZ_WMBPDZsPJwYeuzJSpSTk0hLAg?e=G5mK5p">ACM</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ElHAowAYWX5KqckY09HDb3ABBdgxxd2mHvZzdKRMOF0xIg?e=T5AQKC">DS</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EpsRCzIpJSNBitIc0bgNpEcBbfYZ6l6COiUkiNpmy5q5oQ?e=D2cCfn">DM</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ErFw6p3tUzZLvp1QpOKcOOMB5Gqs6BJM4-82uI4ZnIQFRQ?e=ZviGfw">DLD</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EpSGd5UiHD5NhAOJAZFqh30B7TFceLTG4X8DsX4ami9TIw?e=Txx7hV">HV</a>
+                             <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EgmA9ZoRH1pCktB38FPtjSkBlDPUxOfSoWL_oveZACO4lQ?e=hL9SP8">JAVA</a>
+                             <a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/1sXJb9xEcQj7S__H_fFXUgTqKZYo0SZCp">Graph Theory</a>
+                             <a class="dropdown-item" target="_blank" href="https://drive.google.com/drive/folders/1KLS2evDSBEwwynX9d4f0bVcZm4H0ciHj?usp=sharing">PAPERS</a>
+                         </div>
+                     </div>
+                     <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="fourth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         IV Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="fourth">
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/EhXR6u7g1U9OqbseiKSm0k8BcrJ_Lz93V7vf1K3R1jfpiQ?e=Qk2h41">DBMS</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eolq8JckdhxKorAKXH3MrbUB9Gc1Tg9ymCJfpnXeGT1UUQ?e=bJR74q">MICR</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/El3rapgoCtdIgUouj2Sm6-gBo8_LGIRBz3j0U2Begw7fwg?e=Fl6c0M">MIS</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Eqw8KVvLAFVNpXz0u_ZiPjwBFg0Tw4Ex9FzoNKmQMvmymQ?e=AOzqDG">OT</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/Es-LEwRdd4hDvienSyEDtPcB1-QQsC7l9tfAL47GrLdfQg?e=CdJzw2">TOC</a>
+                         <a class="dropdown-item" target="_blank" href="https://mmmutgkp-my.sharepoint.com/:f:/g/personal/2018021084_mmmut_ac_in/ElHp-gVngNBGhnDJACXzoiMBxHX2dgBJwk--awNQHBkp2A?e=Ft9X0b">PAPERS</a>
+                     </div>
+                 </div>
+                 </div>
+                     </div>
+                     <div class="row justify-content-sm-center mt-md-5 mb-5 pb-5">
+                       <div class="col-6 col-md-auto">
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="fifth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 V Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="fifth">
+                                 <a class="dropdown-item" href="#">NONE</a>
+                             </div>
+                         </div>
+                         <div class="btn-group m-2 dropright">
+                             <button class="btn offset dropdown-toggle" id="sixth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               VI Sem
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="sixth">
+                             <a class="dropdown-item" href="#">NONE</a>
+                             </div>
+                       </div>
+                       <div class="btn-group m-2 dropright">
+                         <button class="btn offset dropdown-toggle" id="seventh" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           VII Sem
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="seventh">
+                         <a class="dropdown-item" href="#">NONE</a>
+                         </div>
+                   </div>
+                   <div class="btn-group m-2 dropright">
+                     <button class="btn offset dropdown-toggle" id="eigth" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       VIII Sem
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="eigth">
+                     <a class="dropdown-item" href="#">NONE</a>
+                     </div>
+               </div>
+                   </div>
+                     </div>
+                  </div>
+                </div>
+
+            </div>
+
+             <!-- Modal -->
+            <div class="modal" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5>Someone who wants to add links to notes can contact me. He/She will get access to complete notes, the code of the website, and other study material.</h5>
+                    <h5 class="modal-title">Password to open files is Pkg@084<br>
+                    Donate by <a href="mailto:2018021084@mmmut.ac.in" class="btn btn-info" target="_blank">contributing</a> your notes.
+                    </h5>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <section>
+              <div class="jumbotron">
+                <p>
+                  Our top contributors for notes are:<br>
+                  1. Ashish Yadav (2018031031)<br>
+                  2. Deepak Singh (2019062005)<br>
+                  3. Sujeet Mourya (2018021120)<br>
+                  4. Rituraj Ranjan Rai (2018021093)<br>
+                  5. Avinash Pathak (2019051046)<br>
+                  6. Shubham Singh (2020021155)<br>
+                  7. Shivam Verma (2020071070)<br> 
+                  8. Manish Agrahari (2020021075)<br> 
+                  9. Bhaskar Trivedi (2020021048)<br> 
+                  10. Himanshu Gupta (2020021064)<br> 
+                  11. Som Tripathi (2021072012)<br> 
+                  12. Himanshu Dubey (2020021063)<br> <br>
+                  Hi, I am Prashant Kumar Gupta. I have a passion for web design and love to create for web and mobile devices.<br>
+                  You can do request for your program and also contribute your programs for other users, which can be uploaded later with your name.
+                  Also, I would like to work in a team, as we will learn faster and much more. Don't hesitate to share your knowledge with others.<br>
+                  You can send your notes, programs, papers, etc. on <a href="mailto:prashantkgupta17@gmail.com" target="_blank">2018021084@mmmut.ac.in</a> or          
+                  <a href="https://forms.gle/fpTGk81vHCeGRxKo9" class="btn btn-success align-self-center" target="_blank">Upload</a> or
+                  by using other contact details on the home page.<br>
+                  You can also contribute to the development of this website. Github Link: <a href="https://github.com/imPGupta/codeworld" target="_blank"><span class="fa fa-github fs-3"></span></a><br>
+
+                  Thank you.
+                </p>
+              </div>
+            </section>
+        
+          </div>
+    
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>       
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+          $(document).ready(function() {
+          
+              setTimeout(function(){
+                  $('body').addClass('loaded');
+              }, 3000);
+          
+          });
+      </script>
+    </body>
+</html>
